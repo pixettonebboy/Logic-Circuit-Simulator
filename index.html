@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Logic Circuit Simulator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Logic Circuit Simulator</h1>
+  </header>
+
+  <div class="toolbar">
+    <button onclick="addBlock('INPUT0')">Add INPUT 0</button>
+    <button onclick="addBlock('INPUT1')">Add INPUT 1</button>
+    <button onclick="addBlock('AND')">Add AND</button>
+    <button onclick="addBlock('OR')">Add OR</button>
+    <button onclick="addBlock('NOT')">Add NOT</button>
+    <button onclick="addBlock('XOR')">Add XOR</button>
+    <button onclick="addBlock('NAND')">Add NAND</button>
+    <button onclick="addBlock('NOR')">Add NOR</button>
+    <button onclick="addBlock('XNOR')">Add XNOR</button>
+    <button onclick="addBlock('OUTPUT')">Add OUTPUT</button>
+    <button onclick="simulate()">Simula</button>
+    <button onclick="deleteSelected()">Cancella selezionato</button>
+    <button onclick="resetAll()">Reset</button>
+  </div>
+
+  <canvas id="canvas" width="1000" height="600"></canvas>
+
+  <footer>
+    Made by <a href="https://github.com/pixettonebboy" target="_blank" rel="noopener noreferrer">Achille Pisani</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
